@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule on your HTML elements as you start to fill them with content*/
+
+.box-color {
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}
+
+/*basic reset*/
+
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav { 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img { 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+
+
+
+body { 
+	font-family: sans-serif;
+	color: white;
+	background-image: url("../images/background.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+
+
+
+/* Remove underlines from links */
+
+a {
+	text-decoration: none;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+	display: none;
+}
+
+
+/*Common page elements  */
+
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 1920px.
+1920px would fit a large monitor or tv. Sizes will vary depending on the projects
+you work on and the intended audience */
+
+#container {
+	margin: 0 auto;
+	width: 1920px;
+}
+
+/* this is our grid based off of our XD file */
+.grid-con {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+header {
+	/*background-color: #ddd;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: end;
+}
+
+
+
+.logo {
+	grid-column: 5/9;
+	/* Remove as content will dictate height */
+	height: 200px;
+	margin-bottom: 25px;
+}
+
+#main-nav {
+	grid-column: 3/11;
+	/* Remove as content will dictate height */
+	height: 80px;
+}
+
+
+/*Common page elements  */
+
+#footer-con {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+
+#gallery h2 {
+	grid-column: 1/-1;
+	text-align: center;
+  }
+
+.gallery-box {
+	background-color: rgb(58, 58, 58);
+	grid-column: span 4 / span 4;
+	/* Remove as content will dictate height */
+	height: 307px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* select the h3 tag inside the article tag on the page */
+/* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
+article h3  {
+	font-size: 2.5em;
+	margin-bottom: 14px;
+  }
+  
+  /* select the p tag inside the article tag on the page */
+  article p {
+	font-size: 1.5em;
+	line-height: 1.2;
+  }
+
+
+/* main section style */
+#character-nav { margin-left: 30%; max-width: 60%; }
+
+.characters { list-style-type: none; }
+
+.characters li { 
+  display: inline-block;
+  height: 220px;
+  margin: 10px 8px;
+
+  background-color: black;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.gallery-box img{
+	filter: grayscale(90%);
+	transition: filter 0.5s;
+}
+
+
+.gallery-box img:hover{
+	filter: grayscale(0%);
+}
+
+ 
+
+  
+  header h1 {
+	color: #168edf;
+  }
+
+
+  /*lightbox styles */
+.lightbox {
+	display: center;
+	width: 100vw; /* viewport width of the browser window */
+  	height: 100vh; /* viewport height of the browser window */
+  	position: fixed;
+	top: 0;
+	left: 0;
+  	background-color: rgba(0,0, 0, 0.85 );
+	background-repeat: no-repeat;
+	background-position: 40px bottom;
+	background-size: 55vh;
+	display: none;
+	justify-content: center;
+  }
+  
+/*toggle lightbox on*/
+	
+.lightbox:target {
+	display: flex 
+}
+
+
+/*this Section to change the Close icon and its functionalities*/
+.lb_close {
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	text-decoration: none;
+	position: relative;
+	top: 20px;
+	left: 95%;
+	font-weight: bolder;
+  }
+  
+  .lb_close:hover { opacity: 0.5;}
+
+
+  .lb_close::after {
+	content: 'X'
+  }
+
+
+    /*this Section to change the text style inside the lightbox*/
+  .lightbox article {
+	width: 55%;
+	margin-left: 40%;
+	padding-top: 50px;
+  }
+
+  .lb_text, .lb_heading {
+	 text-align: left; 
+	}
+
+.lb_text {
+
+  line-height: 1.6;
+  margin-left: 0;
+  padding-top: 2em;
+}
+
+
+   /*this Section to change the text style inside the lightbox*/
+
+	#lightboxbr {
+
+  		background-image: url('../images/brazil_soccer_team.jpg');
+		background-position: 10%;
+		background-size: 760px;
+}
+
+	#lightboxca {
+		background-image: url('../images/homer.png');
+		background-position: 10%;
+		background-size: 760px;
+}
+
+ 	 #lightboxjp {
+		background-image: url('../images/japan_soccer_team.jpg'); 
+		background-position: 10%;
+		background-size: 760px;
+}
+
+	#lightboxqt {
+		background-image: url('../images/qatar_soccer_team.jpg');
+		background-position: 10%;
+		background-size: 760px;
+  }
+  
+  	#lightboxusa {
+	 	background-image: url('../images/usa_soccer_team.webp');
+		 background-position: 10%;
+		 background-size: 760px;
+  }
+  
+	#lightboxaus {
+	 	background-image: url('../images/aussie_soccer_team.webp'); 
+		 background-position: 10%;
+		 background-size: 760px;
+  }
+
+/* ::after rules go here -  */
+/* ::checkd itens get pseudo-class of "checked" - we can select only the 
+checkbox that have been checked and styles to them -  */
+.done input[type="checkbox"]:checked + span::after {
+	content: '\2713';
+	width: 15px;
+	height: 13px;
+	padding: 3px;
+	border-radius: 50%;
+	background-color: rgb(21, 215, 21);
+	border: 4px solid rgb(21, 215, 21);
+	position: relative;
+	margin-left: 165px;
+	font-size: 1em;
+  
+	animation: fadeIn 0.7s;
+  
+  }
