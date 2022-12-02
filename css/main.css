@@ -246,37 +246,37 @@ article h3  {
 
 	#lightboxbr {
 
-  		background-image: url('../images/brazil_soccer_team.jpg');
+  		background-image: url('/images/brazil_soccer_team.jpg');
 		background-position: 10%;
 		background-size: 760px;
 }
 
 	#lightboxca {
-		background-image: url('../images/homer.png');
+		background-image: url('/images/homer.png');
 		background-position: 10%;
 		background-size: 760px;
 }
 
  	 #lightboxjp {
-		background-image: url('../images/japan_soccer_team.jpg'); 
+		background-image: url('/images/japan_soccer_team.jpg'); 
 		background-position: 10%;
 		background-size: 760px;
 }
 
 	#lightboxqt {
-		background-image: url('../images/qatar_soccer_team.jpg');
+		background-image: url('/images/qatar_soccer_team.jpg');
 		background-position: 10%;
 		background-size: 760px;
   }
   
   	#lightboxusa {
-	 	background-image: url('../images/usa_soccer_team.webp');
+	 	background-image: url('/images/usa_soccer_team.webp');
 		 background-position: 10%;
 		 background-size: 760px;
   }
   
 	#lightboxaus {
-	 	background-image: url('../images/aussie_soccer_team.webp'); 
+	 	background-image: url('/images/aussie_soccer_team.webp'); 
 		 background-position: 10%;
 		 background-size: 760px;
   }
