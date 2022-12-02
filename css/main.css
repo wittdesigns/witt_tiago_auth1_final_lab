@@ -247,12 +247,12 @@ article h3  {
 	#lightboxbr {
 
   		background-image: url('/images/brazil_soccer_team.jpg');
-		background-position: 10%;
-		background-size: 760px;
+		  background-position: 10%;
+		  background-size: 760px;
 }
 
 	#lightboxca {
-		background-image: url('/images/homer.png');
+		background-image: url('/images/canada_soccer_team.jpg');
 		background-position: 10%;
 		background-size: 760px;
 }
